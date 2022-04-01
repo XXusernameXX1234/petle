@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>zadanie 34-nazwisko_ucznia</title>
+		<meta charset="utf-8" />
+	</head>
+	<body>
+	<h1>1. zapisz zastosowanie i składnię selektora potomka</h1>
+	&nbsp;&nbsp;&nbsp;Przy użyciu selektora potomka można 
+	formatować elementy, które sa zawarte wewnątrz innych 
+	znaczników, czyli leżą niżej w hierarchii drzewa dokumentu.
+	<br>
+	<textarea style="height: 29px; width: 555px;">
+		przodek1 przodek2 ... potomek { cecha: wartość }
+	</textarea>
+	
+<!------------------------------------------>
+
+	<h1>2. do formatowania jakich elementów służy</h1>
+		&nbsp;&nbsp;&nbsp;Selektor potomka pozwala nadać <br>
+		atrybuty elementom, które leżą niżej w hierarchii 
+		drzewa dokumentu (zawierają się w innych zewnętrznych <br>
+		znacznikach). Dzięki temu możemy zmienić typ formatowania 
+		tylko dla określonych elementów, które są podrzędne <br>
+		w stosunku do innych (przodków). Potomek nie musi leżeć 
+		bezpośrednio wewnątrz znacznika przodka. Może być <br>
+		zawarty jeszcze w innych znacznikach, które z kolei 
+		zawierają się w rodzicu. Nie jest wtedy konieczne <br>
+		podawanie w deklaracji wszystkich rodziców, a jedynie przodka i potomka.
+		<br>
+		
+<!------------------------------------------>
+
+<h1>3. składnia teoretyczna (w ramce)</h1>
+	<textarea style="width: 819px; height: 229px;">
+<html>
+	<head>
+		<title>styl wpisany</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<style type="text/css">
+					p b { color: red }
+		</style>
+	</head>
+	<body>
+		<p>Dzięki temu, jeśli wewnątrz znacznika p (akapit)<br>
+		<b> znajdzie się znacznik b (czyli pogrubienie tekstu), to zostanie on automatycznie </b><br>
+		napisany czcionką koloru czerwonego.</p>
+	</body>
+</html>
+	</textarea>
+		<br>
+
+<!--------------------------------------------->
+
+	<h1>4. opis przodek, potomek, cecha, wartość</h1>
+		&nbsp;&nbsp;&nbsp;"przodek1, przodek2,..." oraz "potomek" <br>
+		(wielokropek należy pominąć!) są selektorami typu, przy <br>
+		czym przodek leży wyżej w hierarchii drzewa dokumentu<br>
+		Natomiast wyrazy "cecha" oraz "wartość" określają atrybuty elementu.
+		<br>
+	</body>
+</html>
+<!--Wesołowski M-->
